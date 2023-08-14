@@ -2,7 +2,7 @@ import configparser
 from mongoengine import connect, disconnect_all
 from pathlib import Path
 
-config_ini = Path(__file__).parent.parent.joinpath("config.ini")
+config_ini = Path(__file__).parent.parent.parent.joinpath("config.ini")
 
 config = configparser.ConfigParser()
 config.read(config_ini)
